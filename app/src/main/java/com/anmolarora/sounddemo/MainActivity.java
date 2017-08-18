@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 scrubber.setProgress(mplayer.getCurrentPosition());//will update scrubber every second
             }
-        }, 0, 1000);//number of seconds the timer runs between(0), 1000->msec between successive pause
+        }, 0, 1000);//number of seconds the timer runs between(0), 1000->msec between successive pauses
 
         scrubber.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
